@@ -10,6 +10,10 @@ h1{
   text-align: center;
 }
 
+h2{
+  font-family:'Playfair Display SC', Courier, monospace
+}
+
 label {
   display: inline-block;
   width: 100px;
@@ -28,6 +32,7 @@ html {
 thead th, tfoot th {
   font-family: 'Rock Salt';
 }
+
 
 th {
   letter-spacing: 2px;
@@ -53,12 +58,62 @@ table {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+input, textarea{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
 .content_td p {
   max-width: 100%;
-  max-height: 100px;
+  max-height: 130px;
   overflow-y: auto;
   text-overflow: ellipsis;
+  padding-top: 15px;
 }
+
+/* img{
+  display: flex;
+  width: 100%;
+} */
+
+img {
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+}
+
+.button_td{  
+  width:10%
+}
+
+button{
+  width:80%
+}
+
+.recipe-list tr:nth-child(odd) {
+  background-color: rgb(198, 245, 237);
+}
+
+th, .footer-row, tfoot{
+  background-color: aliceblue;
+}
+
+.name_column{
+  width:8%
+}
+
+.cuisine_column{
+  width:8%
+}
+
+.photo_column{
+  width:13%
+}
+
+
+
+
 
 /* Column Size for thead */
 

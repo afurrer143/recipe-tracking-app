@@ -25,25 +25,25 @@ function RecipeList({recipes, deleteRecipeButton}) {
       <table>
         <thead>
           <tr>
-            <th><h2>Name </h2></th>
-            <th><h2>Cusine</h2></th>
-            <th><h2>Photo</h2></th>
-            <th><h2>Ingredients</h2></th>
-            <th><h2>Preparation</h2></th>
-            <th><h2>Actions</h2></th>
+            <th className="name_column">Name</th>
+            <th className="cuisine_column">Cusine</th>
+            <th className="photo_column">Photo</th>
+            <th>Ingredients</th>
+            <th>Preparation</th>
+            <th className="button_td">Actions</th>
           </tr>
         </thead>
         <tbody>
           {recipes.map((currentRecipe, index) => {
-            console.log("Current Recipe from RecipeList.js is:", currentRecipe);
+            // console.log("Current Recipe from RecipeList.js is:", currentRecipe);
             return (
               <tr key={index}>
-                <td >{currentRecipe.name} </td>
-                <td>{currentRecipe.cuisine} </td>   
-                <td><CheckPhoto currentRecipe={currentRecipe} /></td>
-                <td>{currentRecipe.ingredients} </td>
-                <td className="content_td">{currentRecipe.preparation} </td>
-                <td> <button name="delete" onClick={() => deleteRecipeButton(index)}>Delete</button> </td>
+                <td className="content_td name_column">{currentRecipe.name} </td>
+                <td className="content_td cuisine_column">{currentRecipe.cuisine} </td>   
+                <td className="content_td photo_column"><CheckPhoto currentRecipe={currentRecipe} /></td>
+                <td className="content_td"><p>{currentRecipe.ingredients}</p> </td>
+                <td className="content_td"><p>{currentRecipe.preparation}</p> </td>
+                <td className="button_td"> <button name="delete"  onClick={() => deleteRecipeButton(index)}>Delete</button> </td>
               </tr>)
             
           })}

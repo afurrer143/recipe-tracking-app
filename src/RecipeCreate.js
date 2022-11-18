@@ -39,8 +39,8 @@ function RecipeCreate({ recipes, addRecipes }) {
       <table>
         <tbody></tbody>
         <tfoot>
-          <tr>
-            <td>
+          <tr className="footer_row">
+            <td className="name_column">
               <input
                 // NAME INPUT
                 type="text"
@@ -52,7 +52,7 @@ function RecipeCreate({ recipes, addRecipes }) {
                 required={true}
               ></input>
             </td>
-            <td>
+            <td className="cuisine_column">
               <input
                 // Cuisine INPUT
                 type="text"
@@ -64,7 +64,7 @@ function RecipeCreate({ recipes, addRecipes }) {
                 required={true}
               ></input>
             </td>
-            <td>
+            <td className="photo_column">
               <input
                 // Photo INPUT (note made photo not required)
                 type="url"
@@ -99,7 +99,7 @@ function RecipeCreate({ recipes, addRecipes }) {
                 required={true}
               />
             </td>
-            <td>
+            <td className="button_td">
               <button type="submit">Create</button>
             </td>
           </tr>

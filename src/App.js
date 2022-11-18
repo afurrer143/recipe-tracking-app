@@ -10,6 +10,7 @@ function App() {
 
   // delete recipe called in recipeList.js
   const deleteRecipe = (recipeIndex) => {
+    // let the record show i wanted to put this in a seperate file, but I didnt wanna deal with qualified not liking that
     console.log("recipe on delete recipe is", recipeIndex)
     setRecipes((currentRecipe) => 
     currentRecipe.filter((rec, index) => index !== recipeIndex)

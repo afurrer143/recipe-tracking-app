@@ -1,1 +1,1 @@
-# recipe-tracking-app
+# recipe-tracking-app by Andrew Furrer

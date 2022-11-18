@@ -4,6 +4,12 @@
   padding: 1em;
 }
 
+h1{
+  font-family:'Playfair Display SC', Courier, monospace;
+  font-size: 64px;
+  text-align: center;
+}
+
 label {
   display: inline-block;
   width: 100px;
